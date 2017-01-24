@@ -1,255 +1,195 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-<head>
-	<title>联系方式</title>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/demo.css" />
-	<link rel="stylesheet" type="text/css" href="css/component.css" />
-	<link rel="stylesheet" type="text/css" href="css/pages.css">
-	<!-- bootstrap引入 -->
-	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
-	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-	<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
+<head>
+    <title>联系方式</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/pages.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
+
 <body style="padding: 0px;">
-	
-	<nav class=" navbar navbar-default navbar-fixed-top" role="navigation" >
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>			
-				<a class="nav-brand" href="index.html"><img style="width: 40px;height: 40px;" src="img/logo.jpg" /></a>
-			</div>
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav" role="tablist">
-					<li role="presentation" class="hidden-sm">
-						<a href="index.html">首页</a>
-					</li>
-					
-					<li role="presentation">
-						<a href="recommend.html">游戏佳作推荐</a>
-					</li>
-					<li role="presentation" class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+    <nav class=" navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <a class="nav-brand" href="index.html"><img style="width: 40px;height: 40px;" src="img/logo.jpg" /></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav" role="tablist">
+                    <li role="presentation" class="hidden-sm"> <a href="index.html">首页</a> </li>
+                    <li role="presentation"> <a href="recommend.html">游戏佳作推荐</a> </li>
+                    <li role="presentation" class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">
 							游戏分发平台 <span class="caret"></span>
 						</a>
-						<ul class="dropdown-menu" role="menu">
-							<li role="presentation">
-								<a href="origin.html">Origin</a>
-							</li >
-							<li role="presentation">
-								<a href="steam.html">Steam</a>
-							</li>
-							<li role="presentation">
-								<a href="uplay.html">UPlay</a>
-							</li>
-							
-
-						</ul>
-					</li>					
-					<li role="presentation" class="active">
-						<a href="personalinformation.html">添加我为好友</a>
-					</li>
-				</ul>
-				<form class="navbar-form navbar-right " role="search" action="http://store.steampowered.com/search/" >
-					<div class="form-group">
-						<input type="text" class="form-control" placeholder="游戏搜索" name="term" >
-					</div>
-					<button type="submit" class="btn btn-default" onclick="var $Form = $J(this).parents('form'); $Form.submit(); return false;">搜索</button>
-				</form>
-			</div>
-
-		</div>
-		
-	</nav>
-	<!-- Modal -->
-	<div style="padding-top: 100px;" class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<form class="form-horizontal">
-				<div class="modal-header">
-					<h4 class="modal-title" id="myModalLabel">填写联系方式</h4>
-				</div>
-				<div class="modal-body" style="overflow: hidden;">
-					<div>
-						<label class="control-label col-sm-3" for="name" >姓名：</label>
-						<div class="col-sm-8">
-						<input class="form-control" type="name" name="name:" id="name" />
-						</div>
-					</div>
-					<br />
-					<div>
-						<label class="control-label col-sm-3" for="qq">QQ：</label>
-						<div class="col-sm-8">
-						<input class="form-control" type="text" name="qq:" id="qq" />
-						</div>
-					</div>
-					<br />
-					<div>
-						<label class="control-label col-sm-3" for="tel">tel：</label>
-						<div class="col-sm-8">
-						<input class="form-control" type="tel" name="tel:" id="tel" />
-						</div>
-					</div>
-					<br />
-					<div>
-						<label class="control-label col-sm-3" for="steam">Steam id:</label>
-						<div class="col-sm-8">
-						<input class="form-control" type="text" name="steam:" id="steam" />
-						</div>
-					</div>
-					<br />
-
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-					<button type="submit" class="btn btn-primary">提交</button>
-				</div>
-				</form>
-			</div>
-		</div>
-	</div>
-	<div class="container demo-1" style="width: 100%;height: 100%;padding: 0px;">
-		
-		<div class="content" >
-			<div class="information panel panel-default container hidden-sm hidden-xs" style="background-color: rgba(255,255,255,0.3);">
-				<!-- chrome中中文字体显示不是微软雅黑（bug？），ie和eage中背景明显卡顿 -->
-				<div class="panel-heading" style="opacity: 0.5;">
-				<strong>个人资料：</strong>
-				</div>
-				<div class="panel-body">
-				正所谓独乐乐不如众乐乐<br />
-				留下自己的联系方式<br />
-				欢迎有兴趣的朋友来一起探索游戏的世界！<br />
-				Steam id：<a href="http://steamcommunity.com/id/chushao/">http://steamcommunity.com/id/chushao/</a>
-				WeChat：Q751590330<br />
-				</div>
-				<!-- Button trigger modal -->
-				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-					留下联系方式
-				</button>
-
-				
-			</div>
-			<div class="informationxs panel panel-default container  hidden-lg hidden-md hidden-sm " style="background-color: rgba(255,255,255,0.3);">
-				<!-- chrome中中文字体显示不是微软雅黑（bug？），ie和eage中背景明显卡顿 -->
-				<div class="panel-heading" style="opacity: 0.5;">
-				<strong>个人资料：</strong>
-				</div>
-				<div class="panel-body">
-				正所谓独乐乐不如众乐乐<br />
-				留下自己的联系方式<br />
-				欢迎有兴趣的朋友来一起探索游戏的世界！<br />
-				Steam id：<a href="http://steamcommunity.com/id/chushao/">http://steamcommunity.com/id/chushao/</a>
-				WeChat：Q751590330<br />
-				</div>
-				<!-- Button trigger modal -->
-				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-					留下联系方式
-				</button>
-
-				
-			</div>
-			<div class="informationsm panel panel-default container  hidden-lg hidden-md hidden-xs" style="background-color: rgba(255,255,255,0.3);">
-				<!-- chrome中中文字体显示不是微软雅黑（bug？），ie和eage中背景明显卡顿 -->
-				<div class="panel-heading" style="opacity: 0.5;">
-				<strong>个人资料：</strong>
-				</div>
-				<div class="panel-body">
-				正所谓独乐乐不如众乐乐<br />
-				留下自己的联系方式<br />
-				欢迎有兴趣的朋友来一起探索游戏的世界！<br />
-				Steam id：<a href="http://steamcommunity.com/id/chushao/">http://steamcommunity.com/id/chushao/</a>
-				WeChat：Q751590330<br />
-				</div>
-				<!-- Button trigger modal -->
-				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-					留下联系方式
-				</button>
-			</div>
-
-
-			<div id="large-header" class="large-header">
-				<div style="position:absolute;right:100px; top:300px;"  class="time" id="time" data-hours="" data-minutes="">
-					<div class="digit">
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-					</div>
-					<div class="digit">
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-					</div>
-					<div class="digit">
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-					</div>
-					<div class="digit">
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-					</div>
-					<div class="digit">
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-					</div>
-					<div class="digit">
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-					</div>
-
-
-				</div>
-
-				<canvas  id="demo-canvas"></canvas>	
-			</div>
-		</div>
-
-	</div>
-	<script src="js/TweenLite.min.js"></script>
-	<script src="js/EasePack.min.js"></script>
-	<script src="js/rAF.js"></script>
-	<script src="js/demo-1.js"></script>
-	<script src='js/Rx.min.js'></script>
-	<script src='js/rxcss.min.js'></script>
-	<script src="js/index.js"></script>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"> <a href="origin.html">Origin</a> </li>
+                            <li role="presentation"> <a href="steam.html">Steam</a> </li>
+                            <li role="presentation"> <a href="uplay.html">UPlay</a> </li>
+                        </ul>
+                    </li>
+                    <li role="presentation" class="active"> <a href="personalinformation.html">添加我为好友</a> </li>
+                </ul>
+                <form class="navbar-form navbar-right " role="search" action="http://store.steampowered.com/search/">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="游戏搜索" name="term"> </div>
+                    <button type="submit" class="btn btn-default" onclick="var $Form = $J(this).parents('form'); $Form.submit(); return false;">搜索</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Modal -->
+    <div style="padding-top: 100px;" class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form class="form-horizontal">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">填写联系方式</h4> </div>
+                    <div class="modal-body" style="overflow: hidden;">
+                        <div>
+                            <label class="control-label col-sm-3" for="name">姓名：</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="name" name="name:" id="name" /> </div>
+                        </div>
+                        <br />
+                        <div>
+                            <label class="control-label col-sm-3" for="qq">QQ：</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="text" name="qq:" id="qq" /> </div>
+                        </div>
+                        <br />
+                        <div>
+                            <label class="control-label col-sm-3" for="tel">tel：</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="tel" name="tel:" id="tel" /> </div>
+                        </div>
+                        <br />
+                        <div>
+                            <label class="control-label col-sm-3" for="steam">Steam id:</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="text" name="steam:" id="steam" /> </div>
+                        </div>
+                        <br /> </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="submit" class="btn btn-primary">提交</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container demo-1" style="width: 100%;height: 100%;padding: 0px;">
+        <div class="content">
+            <div class="information panel panel-default container hidden-sm hidden-xs" style="background-color: rgba(255,255,255,0.3);">
+                <!-- chrome中中文字体显示不是微软雅黑（bug？），ie和eage中背景明显卡顿 -->
+                <div class="panel-heading" style="opacity: 0.5;"> <strong>个人资料：</strong> </div>
+                <div class="panel-body"> 正所谓独乐乐不如众乐乐
+                    <br /> 留下自己的联系方式
+                    <br /> 欢迎有兴趣的朋友来一起探索游戏的世界！
+                    <br /> Steam id：<a href="http://steamcommunity.com/id/chushao/">http://steamcommunity.com/id/chushao/</a> WeChat：Q751590330
+                    <br /> </div>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> 留下联系方式 </button>
+            </div>
+            <div class="informationxs panel panel-default container  hidden-lg hidden-md hidden-sm " style="background-color: rgba(255,255,255,0.3);">
+                <!-- chrome中中文字体显示不是微软雅黑（bug？），ie和eage中背景明显卡顿 -->
+                <div class="panel-heading" style="opacity: 0.5;"> <strong>个人资料：</strong> </div>
+                <div class="panel-body"> 正所谓独乐乐不如众乐乐
+                    <br /> 留下自己的联系方式
+                    <br /> 欢迎有兴趣的朋友来一起探索游戏的世界！
+                    <br /> Steam id：<a href="http://steamcommunity.com/id/chushao/">http://steamcommunity.com/id/chushao/</a> WeChat：Q751590330
+                    <br /> </div>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> 留下联系方式 </button>
+            </div>
+            <div class="informationsm panel panel-default container  hidden-lg hidden-md hidden-xs" style="background-color: rgba(255,255,255,0.3);">
+                <!-- chrome中中文字体显示不是微软雅黑（bug？），ie和eage中背景明显卡顿 -->
+                <div class="panel-heading" style="opacity: 0.5;"> <strong>个人资料：</strong> </div>
+                <div class="panel-body"> 正所谓独乐乐不如众乐乐
+                    <br /> 留下自己的联系方式
+                    <br /> 欢迎有兴趣的朋友来一起探索游戏的世界！
+                    <br /> Steam id：<a href="http://steamcommunity.com/id/chushao/">http://steamcommunity.com/id/chushao/</a> WeChat：Q751590330
+                    <br /> </div>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> 留下联系方式 </button>
+            </div>
+            <div id="large-header" class="large-header">
+                <div style="position:absolute;right:100px; top:300px;" class="time" id="time" data-hours="" data-minutes="">
+                    <div class="digit">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="digit">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="digit">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="digit">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="digit">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="digit">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <canvas id="demo-canvas"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="js/TweenLite.min.js"></script>
+    <script src="js/EasePack.min.js"></script>
+    <script src="js/rAF.js"></script>
+    <script src="js/demo-1.js"></script>
+    <script src='js/Rx.min.js'></script>
+    <script src='js/rxcss.min.js'></script>
+    <script src="js/index.js"></script>
 </body>
+
 </html>
