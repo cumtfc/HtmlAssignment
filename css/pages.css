@@ -1,59 +1,99 @@
-body { padding-top: 50px; }
-.main{
-	padding-top: 50px;
-	margin: 50px;
+body {
+    padding-top: 50px;
 }
-.slider{
-	height: 95%;
-	overflow: hidden;
-    
+
+.main {
+    padding-top: 50px;
+    margin: 50px;
 }
-.floatclear{
-	clear: both;
-	height:70px;
-	overflow: hidden;
+
+.slider {
+    height: 95%;
+    overflow: hidden;
 }
-.information{
-		  padding: 20px;
-    filter:alpha(opacity=50); 
-		  position:absolute;
-		  left:100px; 
-		  top:200px; 
-		  z-index: 1000;
-		  color: white;
-		  font-size: 30px;
-		  font-family: "微软雅黑"；
-            
-		}
-		.informationsm{
-		margin-top:70px;
-		padding: 10px;
-		filter:alpha(opacity=50); 
-		position:absolute;
-		z-index: 1000;
-		color: white;
-		font-size: 24px;
-		font-family: "微软雅黑"；
 
-		}
-		.informationxs{
-		margin-top:70px;
-		padding: 5px;
-		filter:alpha(opacity=50); 
-		position:absolute;
-		z-index: 1000;
-		color: white;
-		font-size: 14px;
-		font-family: "微软雅黑"；
+.floatclear {
+    clear: both;
+    height: 70px;
+    overflow: hidden;
+}
 
-		}
+.information {
+    padding: 20px;
+    filter: alpha(opacity=50);
+    position: absolute;
+    left: 100px;
+    top: 200px;
+    z-index: 1000;
+    color: white;
+    font-size: 30px;
+    font-family: "微软雅黑"；
+}
 
-		a:link {  color: white; text-decoration: none; }
-		a:visited { color: white; }
-		a:hover { color:grey;font-weight: bold;text-decoration: none;  }
-		a:active {  color: white; }
+.informationsm {
+    margin-top: 70px;
+    padding: 10px;
+    filter: alpha(opacity=50);
+    position: absolute;
+    z-index: 1000;
+    color: white;
+    font-size: 24px;
+    font-family: "微软雅黑"；
+}
 
-		.information a:link {  color: white; text-decoration: none; }
-		.information a:visited { color: white; }
-		.information a:hover { color:grey;font-weight: bold;text-decoration: none;  }
-		.information a:active {  color: white; }
+.informationxs {
+    margin-top: 70px;
+    padding: 5px;
+    filter: alpha(opacity=50);
+    position: absolute;
+    z-index: 1000;
+    color: white;
+    font-size: 14px;
+    font-family: "微软雅黑"；
+}
+
+
+/*
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: grey;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:active {
+    color: white;
+}
+*/
+
+.information a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.information a:visited {
+    color: white;
+}
+
+.information a:hover {
+    color: grey;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.information a:active {
+    color: white;
+}
+
+.aside {
+    position: fixed;
+    right:
+}
