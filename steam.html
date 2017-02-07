@@ -2,29 +2,39 @@
 <html lang="zh-cn">
 
 <head>
-    <title>steam</title>
+    <title>origin</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/pages.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/pages.css">
     <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#myNav").affix({
+                offset: {
+                    top: 193
+                }
+            });
+        });
+    </script>
 </head>
 
-<body>
-    <nav class=" navbar navbar-default navbar-fixed-top" role="navigation">
+<body data-spy="scroll" data-target="#myScrollspy" class="body">
+    <nav class=" navbar navbar-default navbar-static-top" role="navigation" style="margin:0px;">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
                 <a class="nav-brand" href="index.html"><img style="width: 40px;height: 40px;" src="img/logo.jpg" /></a>
             </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav" role="tablist">
                     <li role="presentation" class="hidden-sm"> <a href="index.html">首页</a> </li>
                     <li role="presentation"> <a href="recommend.html">游戏佳作推荐</a> </li>
-                    <li role="presentation" class="dropdown active"> <a class="dropdown-toggle " data-toggle="dropdown" href="#">
+                    <li role="presentation" class="dropdown active"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">
 							游戏分发平台 <span class="caret"></span>
 						</a>
                         <ul class="dropdown-menu" role="menu">
@@ -36,16 +46,190 @@
                     <li role="presentation" class="hidden-sm"> <a href="personalinformation.html">添加我为好友</a> </li>
                 </ul>
                 <form class="navbar-form navbar-right " role="search" action="http://store.steampowered.com/search/">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="游戏搜索" name="term"> </div>
-                    <button type="submit" class="btn btn-default" onclick="var $Form = $J(this).parents('form'); $Form.submit(); return false;">搜索</button>
+                    <div class="input-group">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="游戏搜索" name="term"> </div> <span class="input-group-btn">
+                              <button type="submit" class="btn btn-default" onclick="var $Form = $J(this).parents('form'); $Form.submit(); return false;"><span class="glyphicon glyphicon-search"></span></button>
+                        </span>
+                    </div>
                 </form>
             </div>
         </div>
     </nav>
-    <article class="slider">
-        <section class="col-md-10 col-md-offset-1"> </section>
+    <header class="header">
+        <div>
+            <h1>Steam</h1>
+            <p>Valve发布，全球最大的游戏分发销售平台。</p>
+        </div>
+    </header>
+    <article class="row">
+        <nav class="col-md-2 hidden-xs hidden-sm" id="myScrollspy" role="navigation">
+            <ul class="nav nav-tabs nav-stacked" id="myNav">
+                <li class="active"><a href="#section-1"><span class="glyphicon glyphicon-home">&nbsp;</span>Steam</a></li>
+                <li><a href="#section-2"><span class="glyphicon glyphicon-tree-deciduous">&nbsp;</span>起源</a></li>
+                <li><a href="#section-3"><span class="glyphicon glyphicon-shopping-cart">&nbsp;</span>客户端
+</a></li>
+                <li><a href="#section-4"><span class="glyphicon glyphicon-question-sign">&nbsp;</span>新手指南
+</a></li>
+                <li><a href="#section-5"><span class="glyphicon glyphicon-save">&nbsp;</span>下载游戏
+</a></li>
+                <li><a href="#section-6"><span class="glyphicon glyphicon-globe">&nbsp;</span>汉化问题
+</a></li>
+                <li><a href="#section-7"><span class="glyphicon glyphicon-tags">&nbsp;</span>平台特点
+</a></li>
+                <li><a href="#section-8"><span class="glyphicon glyphicon-time">&nbsp;</span>历史
+</a></li>
+                <li><a href="#section-9"><span class="glyphicon glyphicon-tower">&nbsp;</span>游戏</a></li>
+                <li><a href="#section-10"><span class="glyphicon glyphicon-warning-sign">&nbsp;</span>被黑事件
+</a></li>
+                <li><a href="#section-11"><span class="glyphicon glyphicon-user">&nbsp;</span>个人评价</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-chevron-up">&nbsp;</span>返回顶端</a></li>
+            </ul>
+        </nav>
+        <div class="col-md-8" col-sm-8>
+            <section class="card">
+                <div class="page-header">
+                    <h2 id="section-1">Steam<small>（游戏平台）</small></h2> </div>
+                <p>Steam平台是Valve公司聘请BitTorrent(BT下载)发明者布拉姆·科恩亲自开发设计的游戏平台。 </p>
+                <p>Steam平台目前是一款全球最大的综合性数字发行平台。玩家可以在该平台购买、下载、讨论、上传和分享游戏和软件。</p>
+                <p> 2015年10月，Steam获第33届金摇杆奖最佳游戏平台。</p>
+            </section>
+            <section class="card">
+                <div class="page-header">
+                    <h2 id="section-2">起源</h2> </div>
+                <p> Steam是一个整合游戏下载平台。2002年，Steam系统与CS1.4 Beta一起问世。至目前为止，Steam的运作十分成功广泛，无数游戏发行公司的游戏在此平台上发行、更新。 </p>
+                <p>Steam英文原译为蒸汽。</p>
+                <p>至于为什么叫“Steam”。在Steam平台上下载游戏的速度是非常快的，速度快得就像蒸汽一样喷薄而出，令人难以置信，所以名曰Steam。一般情况下可达到满速，目前有7个国内下载点可以使用。</p>
+            </section>
+            <section class="card">
+                <div class="page-header">
+                    <h2 id="section-3">客户端</h2> </div>
+                <p> 想要使用Steam，请先安装Steam平台客户端，注册后即可享有Steam平台的使用权（免费），而Steam平台上的付费游戏，必须于代理零售商处购买产品并在Steam上激活，或是通过Steam平台在线购买，取得游戏序号后（一般直接购买后就会直接获得游戏），即可拥有下载安装以及使用权（游戏激活后与账号永久绑定，任意一台电脑登录拥有使用权的账号皆可下载）。</p>
+                <p>Steam用户端需要更新到最新版本，以便于获得更好的游戏体验。Steam平台的一切更新（包括游戏）都是自动进行的。</p>
+                <p>每个STEAM帐户除了帐号及密码之外。还有一组独一无二的STEAM ID。标准为：STEAM_0:0（也有可能是STEAM_0:1）:XXXXXXX（X为六到八码0~9的阿拉伯数字）</p>
+                <p>Steam平台的客户端新增加了一个名叫STEAM GUARD的功能，旨在保护Steam用户账户的安全。STEAM GUARD首先需要使Steam账户与一个安全邮箱绑定，在Steam用户使用一套以前未登录过自己Steam账号的电脑登录Steam账户的时候，Steam会发送一个包含验证码的电子邮件到安全邮箱中，然后通过登录界面弹出的验证界面输入验证码，来确定登录Steam账户的人是该账户的拥有人。STEAM GUARD大大增加了Steam账户的安全性能。</p>
+                <p><strong>提示：不要将Steam和安全邮箱的密码设置为同一个。</strong></p>
+            </section>
+            <section class="card">
+                <div class="page-header">
+                    <h2 id="section-4">新手指南</h2> </div>
+                <h3>介绍</h3>
+                <p>Steam平台是Valve公司聘请的BitTorrent协议(BT下载)发明者Bram·Cohen亲自开发设计。Valve公司的游戏对于国内玩家来说不陌生，该公司发行的游戏有半条命系列、反恐精英系列、求生之路系列、传送门系列、军团要塞2、Dota2。</p>
+                <p>Steam平台是一款目前全球较大的综合性数字游戏软件发行平台。玩家可以在该平台购买游戏、软件、下载、讨论、上传、分享。</p>
+                <p>对于国内玩家来说，Steam平台和网页支持中文浏览、Steam支持银联支付、没有反作弊功能的游戏可以用汉化补丁、下载速度很快、联机玩家很多（视游戏热门度）、一次购买终身使用（同一账号下）</p>
+                <h3>注册</h3>
+                <p>注册steam不需要VPN，国内可以直接上Steam官网和下载Steam平台。</p>
+                <p>官网地址请看最下方。 毕竟是国外网站，访问速度比较缓慢，这主要取决于自身的网络环境。</p>
+                <p>注：如果你访问的网站为英文版，请依次点击右上角的LANGUAGE-->简体中文（Simplified Chinese）将网页转换成简体中文或繁体中文，随后便和大部分网站的注册流程一样，填写用户名，检查用户名是否可用，两次输入密码，输入可用的邮箱并设定密码保护问题。最后记得要在左下角勾选“我同意并且已经年满13周岁”，才可以继续。</p>
+                <p>最后点击右上角的登录来进行登录。</p>
+                <p>平台安装程序很小，只有1.5M，可以直接下载，但一次开启有较为大量的数据需要更新，原则上留空1~2GB的空间以便更新。</p>
+                <h3>安装过程</h3>
+                <p>运行安装包后点击NEXT→选择“I accept the license agreement AND I am 13 years of age or older”，点击NEXT→然后选择语言，Chinese，点击NEXT→这里选择你的安装路径，磁盘空间推荐10G以上，因为之后游戏会安装在Steam文件夹内，还要留些空间安装其它游戏用。（游戏安装位置可以更改，在平台内左上角点击steam-->设置-->下载-->内容库-->steam文件夹内设置）</p>
+                <p>切记文件目录名不能有中文，例如"X:\蒸汽平台\Steam"这种的不能用，最好是"X:\Steam\"，然后NEXT，安装完毕后STEAM会自动以中文语言启动，并开始更新，第一次会比较久，耐心等待即可。</p>
+            </section>
+            <section class="card">
+                <div class="page-header">
+                    <h2 id="section-5">下载游戏</h2> </div>
+                <p>在Steam上购买了游戏后会在Steam客户端的游戏库内显示，并且可以选择下载安装，如果是激活码购买就点击Steam平台界面左下角的“添加游戏”选择“激活产品”并输入游戏序列号即可。 </p>
+                <p>在Steam界面的“查看”选项选择“设置”然后点击“下载分类”，可以设置下载区，国内可以选择美国下载区和国内下载区啥的，一般选择美国下载区下载速度很快，国内也可以，只要你网络给力，在无干扰的前提下，Steam的下载服务器是很好的，基本是满速的，跟迅雷差不多。 </p>
+                <p>你也可以选择用迅雷下载游戏源文件（必须适用Steam读取）然后把游戏文件放在steamapps文件夹下验证游戏文件完整性亦可，这种方法更加适用于网络环境实在不良的人群。具体办法请自行搜索。注意是下载正版游戏源文件而不是破解版。</p>
+            </section>
+            <section class="card">
+                <div class="page-header">
+                    <h2 id="section-6">汉化问题</h2> </div>
+                <p> Steam上的游戏，一般没有Valve反作弊系统（即VAC系统）就可以使用汉化补丁，至于怎么看是否带反作弊功能就看游戏商店页面，搜索游戏名进入游戏页面往下拉看右边就会有显示支持的语言下面有单人游戏、多人游戏之类的，如果没有显示“启用 Valve 反作弊保护”就代表可以用汉化补丁。</p>
+                <p>汉化补丁最好选择内核汉化，外挂式汉化一般不能用。</p>
+                <p>但关于汉化问题，毕竟这种私下改动游戏文件的方式绝非万无一失，通常没有VAC的没事，但特殊游戏，如《使命召唤》等自带多人游戏系统的游戏，因为它的发行商提供的多人服务器自带反作弊机制，因此此类游戏如果打汉化很容易导致被服务器拉黑，并非Steam的BAN封禁，而是多人服务器方的拉黑。所以使用汉化的用户群注意，尽量不要将汉化带入多人游戏中使用，有VAC的更是如此。</p>
+            </section>
+            <section class="card">
+                <div class="page-header">
+                    <h2 id="section-7">平台特点</h2> </div>
+                <h3>VAC反作弊系统</h3>
+                <p>VAC(Valve Anti-cheating)是一种自动启动的反作弊系统。</p>
+                <p>VAC支持所有由Valve出品的游戏及第三方mods，可以在所有Source引擎游戏服务器使用，在连接Source引擎游戏时服务器会检测VAC是否加载。这个反作弊系统会永久禁止作弊的玩家进入开启VAC系统的服务器。</p>
+                <p>VAC将会扫描电脑的内存，不会扫描硬盘。VAC启动时对游戏中的画面、速度等没有影响。</p>
+                <p>VAC不仅在反作弊中有用，同时也会阻止盗版者进入正版服务器内，所以，请不要作弊。</p>
+                <h3>自动更新系统</h3>
+                <p>Steam平台本身和其中的游戏能够自动进行更新，不需玩家自己手动更新。随着Valve公司的不断改进，这个问题已获得解决，整个系统也变得越来越高效。Steam在全球设有大量的更新服务器，大陆玩家想要获得较快的更新速度，请选择北京服务器节点（Beijing）。</p>
+                <h3>好友系统</h3>
+                <p>好友系统的出现，使得玩家们有了便捷的在线交流方式。就如QQ一样，好友系统可以添加好友于自己的名单中，且显示出好友是否上线或在忙碌中等状态，并了解好友正在哪个服务器进行游戏，方便自己快速与朋友一起游戏。</p>
+                <h3>服务器浏览器</h3>
+                <p>这项功能使得玩家不需要开启游戏就能知道服务器的状况，包括服务器的名称、玩家数量、连线状态等，也可以使用滑鼠右键将自己常用的服务器加入收藏夹中。还可从历史列表查获自己之前去过的服务器，以以及了解好友在哪个服务器中。</p>
+                <h3>库</h3>
+                <p>库，也就是游戏列表，可显示玩家所拥有的游戏，并显示游戏的更新状态。有多种显示模式。</p>
+                <h3>截图</h3>
+                <p>Steam平台可以在游戏中截图来制作自己喜欢的相片。在游戏中可以截图，并保存在本地，同时可以在社区中上传自己所截的图片。默认截图键是F12。Steam用户可以在设置——游戏中这个选项卡中自定义截图按键。</p>
+                <h3>账户链接</h3>
+                <p>此功能于2011年4月下旬登陆Steam平台，该功能可以实现Steam账户与PlayStation3账户连接，使其实现跨平台游戏配对、对战、好友系统、聊天和成就等。PS3上的Steam也可以把合作模式游戏进度和单人游戏存档保存在Steam云端，使玩家可以在任意PS3主机上继续他们之前的游戏进度。</p>
+                <p>该功能正处于起步阶段所以可关联的游戏尚少，其中由V社开发的《传送门2》是该功能的第一个支持项目。</p>
+                <p>视频分享</p>
+                <p>Steam于2011年5月初推出了视频分享功能，借助全球最大的视频分享网站Youtube实现Steam用户间的视频分享，付费用户可以在社区界面进行Steam账户与Youtube帐号的连接，从而在steam社区中实现与玩家间视频的分享。</p>
+                <h3>Facebook链接</h3>
+                <p>此功能于2011年6月上旬登陆Steam平台，该功能可以将Steam账户与Facebook账户进行关联，从而可以更加方便快捷地寻找好友，这使得Steam的交友功能变得更加完善。</p>
+                <p>青睐之光</p>
+                <p>青睐之光(Steam Greenlight)，让平台上的用户对游戏进行投票，自己会花钱玩哪些游戏，然后决定游戏的发布与否。系统很简单，开发商上传游戏到青睐之光系统中，包括截屏，视频及相关信息，Steam用户投票，然后帮助推广自己喜欢的游戏，提高游戏曝光度。</p>
+                <p>整个系统与Steam的整体理念很搭配，消除了独立开发者与玩家之间的诸多障碍。游戏最基本的要求就是要支持Windows PC，Valve透露，将来也会增加对Mac的支持，开发商需要提供的信息包括：</p>
+                <p>
+                    <ol>
+                        <li>公司的方形logo，方便用户识别以及搜索；</li>
+                        <li>至少一个视频，展示游戏理念；</li>
+                        <li>至少4张截屏或图片；</li>
+                        <li>对游戏的文字描述以及对系统的要求。</li>
+                    </ol>
+                </p>
+                <h3>创意工坊</h3>
+                <p>有没有梦想过让数以百万的玩家在游戏中看到你发挥灵感制作的物品呢？是时候了，因为有了 Steam 创意工坊。现在你可以提交、查找、评价并下载这些你最喜欢的 Steam 游戏的新内容。</p>
+                <p>不同的游戏将会通过不同的方式来利用 Steam 创意工坊，但是这里所有的东西都是由 Steam 社区的玩家们制作的，就像你一样。</p>
+                <p>玩家创造和设计并上传供其他玩家下载使用，在一些游戏中玩家设计的物品或地图之类的被采纳可以进入游戏的商城来卖，其收益会分一部分给设计者。</p>
+                <p>但是Workshop并不是每款游戏都有的。</p>
+            </section>
+            <section class="card">
+                <div class="page-header">
+                    <h2 id="section-8">历史</h2> </div>
+                <p> Steam系统取代了WON系统。WON系统是原来的半条命游戏的验证系统。在推出CS1.6后退役。</p>
+            </section>
+            <section class="card">
+                <div class="page-header">
+                    <h2 id="section-9">游戏</h2> </div>
+                <p>流行的PC游戏，无论是半条命系列或是使命召唤系列 这样的大作，还是植物大战僵尸这样的休闲小游戏，都可以在STEAM上购买到。但是部分游戏有地区限制，但是通过国外玩家赠送Steam Gift的方式可以避免这个问题。根据steam用户协议之规定，用户承诺不使用任何IP代理工具（VPN等）以规避区域性内容定价措施，违反用户协议此条者，将会导致账号被永久性封禁且不得申诉。</p>
+                <p>Steam可以在Mac上使用，并且不用重复购买已经在PC上买过的游戏。</p>
+                <h3>原因</h3>
+                <p>导致Steam帐户被禁用的原因很多，比如非法或者开挂，大多数为你的游戏来源非法，较普遍的情况是黑卡，盗用他人信用卡进行消费。通常在1~3个月后持卡人收到账单后拒绝付款，导致帐号被禁，或者是伪造的假信用卡，1~3个月后银行拒绝付款，导致帐号被禁。被禁可以通过Steam Support进行申诉解禁，但必须提供持卡人全名，卡种，过期日期，尾4位号码，详细账单地址等信息。一般黑卡是没有这些信息的，所以取回被禁帐号基本是不可能的。若您的Steam账户有多个游戏，只有某个游戏属于这种情况，其它的游戏是正常购买的，则可以删除违法游戏后，恢复帐号。</p>
+                <h3>解决办法</h3>
+                <P>防止这种情况发生的办法很简单，自己办信用卡消费即可。或者找信誉、口碑好的卖家进行代购。切勿贪小便宜，以免后悔莫及。Steam支持银联付款，请尽量自行在平台购买，以保证您的账户安全。</P>
+            </section>
+            <section class="card">
+                <div class="page-header">
+                    <h2 id="section-10">被黑事件</h2> </div>
+                <p>2011年11月11日，Valve Software总裁加布·纽维尔向Steam的用户发送了一篇通知，承认黑客大规模攻击了Steam论坛，而且受到攻击的论坛数据库中，包含用户信用卡账号和个人信息数据包，其中用户信用卡账号和信息的数据包是加密的，但是Valve不能确定加密的信用卡信息是否被黑客盗走，也不能确定信用卡账号和密码是否被破解。Valve提醒Steam用户时刻注意自己的信用卡使用信息。[4] Steam论坛关闭，Steam平台仍旧运行，Valve同时进一步调查黑客事件，当论坛恢复时，所有用户都被要求变更密码。用在Steam平台和Steam论坛使用的密码如果相同，Valve也建议更换Steam平台的账户密码。</p>
+                <p>Newell强调黑客攻击的是Steam论坛，并没有攻击Steam平台，所以没有强制用户更改Steam平台密码，但是如果用户不放心的话，可以将Steam平台密码也更改掉。</P>
+            </section>
+            <section class="card">
+                <div class="page-header">
+                    <h2 id="section-11">个人评价</h2> </div>
+                <p>首先，以上摘自百度百科，加HTML标签加的生无可恋。</p>
+                <p>好吧，说正题。Steam是我个人用的最多的一个平台，官方中文，单独的中国低价区，国内多个下载节点，中文客服，咳咳，客服先不提。总之，steam提供提供的服务是所有游戏平台中“坠吼”的。</P>
+                <p> 起初接触到这个平台源于基友预购“劳拉10”后送了个“劳拉9”，然后他早都买过9了，于是乎便让我注册了个账号丢给了我。好吧，潘多拉魔盒就是这样打开的。文明5?都说好玩儿，正好打折，买买买！！！巫师3？RPG神作，波兰蠢驴把巫师4当DLC卖了，啥，50%Off？买买买!!!好吧，就是酱紫。 </p>
+                <p>对了，steam支持银联、支付宝、财付通、微信支付等支付方式，妈妈再也不用我担心剁手不方便啦。就用户体验而言，steam比origin和Uplay不知道高到哪里去了，至今还能回想起被EA“云删档”所支配的恐惧。 </p>
+                <p>辣鸡平台，毁我青春，费我钱财。</p>
+                <p>Ps:Steam ID:行尸般的某某某</p>
+            </section>
+        </div>
     </article>
+    <center <nav class="row" aria-label="Page navigation">
+        <ul class="pagination">
+            <li>
+                <a href="origin.html" aria-label="Previous"> <span aria-hidden="true">&laquo;</span> </a>
+            </li>
+            <li><a href="origin.html">1</a></li>
+            <li><a href="steam.html">2</a></li>
+            <li><a href="uplay.html">3</a></li>
+            <li>
+                <a href="uplay.html" aria-label="Next"> <span aria-hidden="true">&raquo;</span> </a>
+            </li>
+        </ul>
+        </nav>
+    </center>
 </body>
 
 </html>

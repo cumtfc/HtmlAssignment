@@ -2,7 +2,7 @@
 <html lang="zh-cn">
 
 <head>
-    <title>游戏种草</title>
+    <title>游戏推荐</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,16 +13,16 @@
     <script src="js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body class="body">
     <nav class=" navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
                 <a class="nav-brand" href="index.html"><img style="width: 40px;height: 40px;" src="img/logo.jpg" /></a>
             </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav" role="tablist">
-                    <li role="presentation" class="hidden-sm"> <a href="index.html">首页</a> </li>
+                    <li role="presentation"> <a href="index.html">首页</a> </li>
                     <li role="presentation" class="active"> <a href="recommend.html">游戏佳作推荐</a> </li>
                     <li role="presentation" class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">
 							游戏分发平台 <span class="caret"></span>
@@ -36,15 +36,125 @@
                     <li role="presentation" class="hidden-sm"> <a href="personalinformation.html">添加我为好友</a> </li>
                 </ul>
                 <form class="navbar-form navbar-right " role="search" action="http://store.steampowered.com/search/">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="游戏搜索" name="term"> </div>
-                    <button type="submit" class="btn btn-default" onclick="var $Form = $J(this).parents('form'); $Form.submit(); return false;">搜索</button>
+                    <div class="input-group">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="游戏搜索" name="term"> </div> <span class="input-group-btn">
+                              <button type="submit" class="btn btn-default" onclick="var $Form = $J(this).parents('form'); $Form.submit(); return false;"><span class="glyphicon glyphicon-search"></span></button>
+                        </span>
+                    </div>
                 </form>
             </div>
         </div>
     </nav>
-    <article class="slider">
-        <section class="col-md-10 col-md-offset-1"> </section>
+    <article class="row">
+        <section class="reheader">
+            <div class=" headercover">
+                <div style="margin:200px auto;">
+                    <h1>一些优秀作品的推荐</h1>
+                    <p> 优秀的游戏太多太多，这里不可能全部涵盖，只是取一部分来进行分享。 </p>
+                </div>
+            </div>
+        </section>
+        <section class="pagewhite">
+            <div class="container">
+                <div class="pagediv row">
+                    <div class="col-md-5">
+                        <div class="intrtext">
+                            <h2>热血无赖：终极版</h2>
+                            <p>是黑是白？是善是恶？想体验无间道生活麽？想看看最绚丽的中国功夫ACT游戏吗？乐感十足的粤语歌曲，炫酷的打斗场面，逼真细緻的格斗细节，还原真实的中国功夫，致敬李小龙先生的《龙争虎斗》，惊悚刺激的中国丧尸。《热血无赖》带给你日前最真实中国场景3D游戏！带你感受狂野炫酷的中国功夫！最贴切的香港街头体验！</p>
+                            <p>这个游戏却拥有自己的独特风格，在沙盒类领域走出了自己的路线。 最大的亮点就是打击感十足，打斗场面十分炫酷，细节比较到位，井盖冒出的热气、打斗场面中散落的纸张、碰到树木花花掉落的树叶、打破鱼缸掉出来的鱼、逼真炫酷的雨景、路人NPC丰富的动作表情等等。</p>
+                            <br />
+                            <button type="button" class="btn btn-danger" onClick="window.open('http://store.steampowered.com/app/307690/')">立即获取</button>
+                        </div>
+                    </div>
+                    <div class="col-md-7"><img class="img-responsive" alt="热血无赖图" src="img/game1.png"></div>
+                </div>
+            </div>
+        </section>
+        <section class="pagegrey">
+            <div class="container">
+                <div class="pagediv row">
+                    <div class="col-md-7"><img class="img-responsive" alt="DOOM图" src="img/game2.jpg"></div>
+                    <div class="col-md-5">
+                        <div class="intrtext">
+                            <h2>DOOM 毁灭战士4</h2>
+                            <p>你是要一辈子唯唯諾諾、躲躲藏藏，还是要掏出霰弹枪大干一场？血脉喷张的战斗，紧张刺激的节奏搭配上暴力爽快的BGM，生与死只在一瞬间，面对数量众多的恶魔，你该如何用你的霰弹枪干他们把他们送回地狱？ 来自FPS奠基者卡马克缔造的DOOM系列最新作，给玩家带来一场硬核、暴力美学、枪弹与血肉的游玩盛宴 </p>
+                            <p>12年的等待，ID终于交上了一份让人满意到无以复加的答卷。</p>
+                            <p>ID的美工质量没的说，枪模非常精细。 抗锯齿占用资源少且运行效率高，粒子和光照都是一流， 场景的反射和材质都很棒。</p>
+                            <br />
+                            <button type="button" class="btn btn-danger" onClick="window.open('http://store.steampowered.com/app/379720/')">立即获取</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pagewhite">
+            <div class="container">
+                <div class="pagediv row">
+                    <div class="col-md-5">
+                        <div class="intrtext">
+                            <h2>巫师3：狂猎</h2>
+                            <p>一代猎魔人冒险旅途之终章，命运的抉择全在你的手中，你是想浪迹于天涯海角当个逍遥的剑客，还是沉迷于世俗花天酒地的雇佣兵，来吧，一场与众不同的冒险等着你来开启！</p>
+                            <p>巫师3作为TGA 2015年度最佳游戏大奖、最佳RPG游戏，拥有着超高的评价，CD Projekt Red也十分及时的修复游戏的BUG和对游戏进行着细致的更新，如果你还没有体验过这款游戏，那么你一定不能错过，来盘昆特牌吧！</p>
+                            <br />
+                            <button type="button" class="btn btn-danger" onClick="window.open('http://store.steampowered.com/app/292030/')">立即获取</button>
+                        </div>
+                    </div>
+                    <div class="col-md-7"><img class="img-responsive" alt="昆特3图" src="img/game3.jpg"></div>
+                </div>
+            </div>
+        </section>
+        <section class="pagegrey">
+            <div class="container">
+                <div class="pagediv row">
+                    <div class="col-md-7"><img class="img-responsive" alt="羞辱2图" src="img/game4.png"></div>
+                    <div class="col-md-5">
+                        <div class="intrtext">
+                            <h2>羞辱2</h2>
+                            <p>简单而又暴力的美学刺杀体验。科技与魔法相结合，神龙见首不见尾的潜入击杀，躲藏在阴森黑暗的角落中，抓住时机，说时迟那时快，迅雷不及掩耳之势让鲜血四溅，喷射在屏幕四方带给观众视觉上的震撼，并带来抑制不住的爽快感。</p>
+                            <p>刀刀入肉的爽快感，简单而又暴力的美学刺杀体验。故事设定在一个架空的世界，这是一个科技与魔法共存的世界，蒸汽朋克的风格美轮美奂，绝对是一部值得享受的佳作。</p>
+                            <br />
+                            <button type="button" class="btn btn-danger" onClick="window.open('http://store.steampowered.com/app/403640/')">立即获取</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pagewhite">
+            <div class="container">
+                <div class="pagediv row">
+                    <div class="col-md-5">
+                        <div class="intrtext">
+                            <h2>量子破碎</h2>
+                            <p>时间，是这世间的头号杀手。时间，能改变一切。时间能够击溃你昔日好友的底线来伤害你，同样，你也可以利用时间来进行反击。如果，你预见到了未来，发现时间的尽头不可避免，你是会选择回到过去修正这一切，还是利用自己的能力来面对即将到来的未来？由芬兰文艺青年带来的一段奇妙刺激的时间旅行、一场精彩绝伦的时间对决</p>
+                            <p>整部作品充满了文艺色彩，小到人物命名学，大到剧本台词对白的深层次影射。</p>
+                            <p>本作搭配配套美剧食用风味更佳。</p>
+                            <br />
+                            <button type="button" class="btn btn-danger" onClick="window.open('http://store.steampowered.com/app/474960/')">立即获取</button>
+                        </div>
+                    </div>
+                    <div class="col-md-7"><img class="img-responsive" alt="量子破碎图" src="img/game5.jpg"></div>
+                </div>
+            </div>
+        </section>
+        <section class="pagegrey">
+            <div class="container">
+                <div class="pagediv row">
+                    <div class="col-md-7"><img class="img-responsive" alt="bug命图" src="img/game6.jpg"></div>
+                    <div class="col-md-5">
+                        <div class="intrtext">
+                            <h2>刺客信条：大革命</h2>
+                            <p>刺客与圣殿骑士们所苦苦寻找的真理到底是什么？是刺客们的“自由与解放”？还是还是圣殿骑士的“权利与统一”？无论对与错，无论所选择站的阵营不同，自古以来双方的争执都将在本篇章里面徐徐道来，复仇？爱情？还是兄弟会的情谊与其理念的背道而驰都将一一呈现在玩家们的眼前。</p>
+                            <p>或许如刺客的教条一般:"Nothing is true, everything is permitted." </p>
+                            <p>也或许如圣殿骑士们贯彻的真理:"Not to us God, not to us, but to Your Name Give Glory. May the father of the understanding guide us" </p>
+                            <p>是与非，阵营的选择全权在我们的手里！！！</p>
+                            <br />
+                            <button type="button" class="btn btn-danger" onClick="window.open('http://store.steampowered.com/app/289650/')">立即获取</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </article>
 </body>
 

@@ -2,25 +2,35 @@
 <html lang="zh-cn">
 
 <head>
-    <title>play U</title>
+    <title>origin</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/pages.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/pages.css">
     <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#myNav").affix({
+                offset: {
+                    top: 193
+                }
+            });
+        });
+    </script>
 </head>
 
-<body>
-    <nav class=" navbar navbar-default navbar-fixed-top" role="navigation">
+<body data-spy="scroll" data-target="#myScrollspy" class="body">
+    <nav class=" navbar navbar-default navbar-static-top" role="navigation" style="margin:0px;">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
                 <a class="nav-brand" href="index.html"><img style="width: 40px;height: 40px;" src="img/logo.jpg" /></a>
             </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav" role="tablist">
                     <li role="presentation" class="hidden-sm"> <a href="index.html">首页</a> </li>
                     <li role="presentation"> <a href="recommend.html">游戏佳作推荐</a> </li>
@@ -36,16 +46,94 @@
                     <li role="presentation" class="hidden-sm"> <a href="personalinformation.html">添加我为好友</a> </li>
                 </ul>
                 <form class="navbar-form navbar-right " role="search" action="http://store.steampowered.com/search/">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="游戏搜索" name="term"> </div>
-                    <button type="submit" class="btn btn-default" onclick="var $Form = $J(this).parents('form'); $Form.submit(); return false;">搜索</button>
+                    <div class="input-group">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="游戏搜索" name="term"> </div> <span class="input-group-btn">
+                              <button type="submit" class="btn btn-default" onclick="var $Form = $J(this).parents('form'); $Form.submit(); return false;"><span class="glyphicon glyphicon-search"></span></button>
+                        </span>
+                    </div>
                 </form>
             </div>
         </div>
     </nav>
-    <article class="slider">
-        <section class="col-md-10 col-md-offset-1"> </section>
+    <header class="header">
+        <div>
+            <h1>Uplay</h1>
+            <p>育碧旗下游戏平台，提供自家游戏的购买和下载。</p>
+        </div>
+    </header>
+    <article class="row">
+        <nav class="col-md-2 hidden-xs hidden-sm" id="myScrollspy" role="navigation">
+            <ul class="nav nav-tabs nav-stacked" id="myNav">
+                <li class="active"><a href="#section-1"><span class="glyphicon glyphicon-home">&nbsp;</span>Uplay</a></li>
+                <li><a href="#section-2"><span class="glyphicon glyphicon-tags">&nbsp;</span>平台特点</a></li>
+                <li><a href="#section-3"><span class="glyphicon glyphicon-shopping-cart">&nbsp;</span>客户端</a></li>
+                <li><a href="#section-4"><span class="glyphicon glyphicon-font">&nbsp;</span>反响及评价</a></li>
+                <li><a href="#section-5"><span class="glyphicon glyphicon-user">&nbsp;</span>个人评价</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-chevron-up">&nbsp;</span>返回顶端</a></li>
+            </ul>
+        </nav>
+        <div class="col-md-8" col-sm-8>
+            <section class="card">
+                <div class="page-header">
+                    <h2 id="section-1">Uplay <small>（游戏社交平台）</small></h2> </div>
+                <p>Uplay is a digital distribution, digital rights management, multiplayer and communications service developed by Ubisoft Entertainment Sweden AB to provide an experience similar to the achievements/trophies offered by various other game companies. The service is provided across various platforms (PC, PlayStation 4, Xbox One, Wii U, PlayStation 3, Xbox 360, Facebook, iOS, Android, Windows Phone, OnLive). The Uplay app for the Wii U was released after the launch of the console on 1 December 2012 on the Nintendo eShop. Uplay is used exclusively by first-party Ubisoft games, and although some third-party titles are sold through the Uplay store, they do not use the Uplay platform. </p>
+            </section>
+            <section class="card">
+                <div class="page-header">
+                    <h2 id="section-2">Features</h2> </div>
+                <p>With the release of Assassin's Creed II in 2009, Ubisoft launched the Uplay network, which is activated either in-game or via the Uplay website.Uplay allows players to connect with other gamers, and to earn rewards based on achievements (called "Actions") in Uplay-enabled games, with Ubisoft CEO Yves Guillemot stating that "the more you play, the more free goods you will be able to have". </p>
+                <p>Each Uplay-enabled game has four specific Actions that can be accomplished, earning the player Uplay points, which are referred to as Units. Each Action grants the player either 5, 10, 15, 20, 30 or 40 Units, which can then be used to unlock game-related rewards; though the Units are not bound to the specific games they were earned in, and may be used to purchase rewards from any available game.</p>
+            </section>
+            <section class="card">
+                <div class="page-header">
+                    <h2 id="section-3">Client</h2> </div>
+                <p>The Uplay desktop client was released on 3 July 2012, replacing the Ubisoft Game Launcher. The desktop client connects Uplay's currency and reward features, and links a player's Ubi profile across platforms (consoles, Facebook, PC, and mobile) within a single app.The client is similar to Valve’s Steam and EA’s Origin desktop clients—where the user is able to purchase and launch games from the application. A single Uplay account is required to access the client, that can be used across platforms (consoles, PC and mobile) and to access Ubisoft’s online sites, and forums. If customers already have a Uplay account, they can use their existing account credentials to log in to the Uplay desktop client. Otherwise, they will be asked to create a new account upon their first connection to the client.</p>
+                <p> A single Uplay account is required to access the client, that can be used across platforms (consoles, PC and mobile) and to access Ubisoft’s online sites, and forums. If customers already have a Uplay account, they can use their existing account credentials to log in to the Uplay desktop client. Otherwise, they will be asked to create a new account upon their first connection to the client.</p>
+                <h3>Digital rights management</h3>
+                <p>When it was initially launched, the Windows version of Uplay required players to maintain a constant connection to the internet to play Uplay-enabled games. Uplay games would not start without an active internet connection, and losing the connection during gameplay would halt the game, sending users back to their last checkpoint or save depending on the specific game. Some games, such as Assassin's Creed II, were later patched to save the player's exact location prior to disconnect and return them to that location when an internet connection was re-established.The scheme quickly came under fire after a denial-of-service attack on Ubisoft's DRM servers in early March rendered Silent Hunter 5 and Assassin's Creed II unplayable for several days. </p>
+                <p>The always-on requirement was quietly lifted for existing Uplay games towards the end of 2010, being changed to a single validation on game launch. However, the always-on requirement made a return in 2011 with the releases of Driver: San Francisco and From Dust, the latter having been explicitly stated by Ubisoft prior to release to only require a one-time online activation on install.From Dust was later patched to remove the always-on requirement.</p>
+                <p>In September 2012 Ubisoft employees confirmed in an interview that no further Ubisoft games would be using the always-on requirement, instead opting for a one-time activation of the game on install. However The Crew required the player to be always online in order to play.</p>
+                <p>Certain Ubisoft games required an online pass known as a "Uplay Passport" to access online and multiplayer content. In October 2013, Ubisoft announced that it would discontinue its use of online passes on future games, and made the Uplay Passport for Assassin's Creed IV: Black Flag available at no charge effective immediately.</p>
+                <h3>Rootkit allegations</h3>
+                <p>In July 2012 Tavis Ormandy, an Information Security Engineer at Google, claimed that "Uplay" DRM is a rootkit and poses a serious security risk. The software installs a browser plugin that provides access to the system.Ormandy has written proof-of-concept code for the exploit. The exploit is believed to have been fixed as of version 2.0.4, released on 30 July 2012.</p>
+            </section>
+            <section class="card">
+                <div class="page-header">
+                    <h2 id="section-4">Reception</h2> </div>
+                <p>Uplay's reception with reviewers and the public has been largely negative. John Walker, writing for Rock, Paper, Shotgun, called it a "technical mess" and saying that "it desperately needs to just go away" in the wake of a server collapse around the release of Far Cry 3 that temporarily made the game unplayable.Ars Technica's Kyle Orland says that "Uplay has not exactly endeared itself to the PC gaming community", describing a history of technical errors and problems related to its DRM.Geoffrey Tim, writing for lazygamer.net, called it the "worst thing" about Ubisoft's "otherwise excellent" games, and particularly criticized it for running alongside Steam when Ubisoft games are purchased on that platform. Patrick Klepek, writing for Giant Bomb, criticized the same point, saying that Ubisoft's desire to run its own distribution service offered no real benefit to consumers, and describing the tactics they used to try to get people to use it as irritating and unappealing. Writing a comparison for GadgetReview in which he compared the three major distribution platforms—Uplay, Valve's Steam and Electronic Arts' Origin—Shawn Sanders criticized it for using large amounts of memory while offering fewer features than its competitors.Summarizing popular opinion on the service, VG247's Brenna Hillier said that "Uplay is one of the less popular PC DRM systems, but all your fervent wishing that it would die has not been successful."</p>
+            </section>
+            <section class="card">
+                <div class="page-header">
+                    <h2 id="section-5">Personal Opinion</h2> </div>
+                <p>以上内容摘抄自百科</p>
+                <p>咳咳，为啥这个页面是英文呢，你浏览器坏了，嗯，就是这样。</p>
+                <p>做到这个页面时一搜百科，懵逼了，百度百科没有这个词条，维基百科只有英文版的词条，试着机翻了一下。Google说好的那啥神经网络还是啥技术来着，结果翻出来惨不忍睹。那就将就着英文看看吧，大家都是考过四六级的，这点英文问题不大，老师就更不用说了，哈哈。</p>
+                <p>旁白：你为自己的懒找借口的方式真是清新脱俗。
+                    <br /> 我：貌似没有什么不对。 </p>
+                <p>其实吧，Uplay上的游戏都是育碧自家的，而且最重要的是这个平台的定位和Origin并不一样，育碧的所有游戏你都能通过Steam买到，然后直接把Uplay账号和Steam账号绑定就可以了。换句话说，无论如何，你总是需要Uplay平台才能玩儿育碧游戏。那为什么要通过Steam购买呢？+1的欢乐没入坑的人是不会体会到的，2333。</p>
+                <p>育碧旗下的游戏如看门狗系列、刺客信条系列、汤姆克兰西系列等都需要通过Uplay来进行线上部分的游戏，steam就只管卖，玩儿的时候一系列服务还是Uplay提供滴。</p>
+                <p>贴吧黑育碧是政治正确（手动滑稽），因为育碧的游戏发售之初总是Bug成堆，网友戏称买Bug送游戏。不过也就说说而已，育碧做的游戏还是挺不错滴，新IP荣耀战魂正在在我做这个页面时正在公测，貌似风评不错。</p>
+                <p>对了，别相信育碧的CG：<a target="_blank" href="https://www.bilibili.com/video/av7958720/">https://www.bilibili.com/video/av7958720/</a></p>
+                <p>辣鸡平台，毁我青春，费我钱财。</p>
+            </section>
+        </div>
     </article>
+    <center>
+        <nav class="row" aria-label="Page navigation">
+            <ul class="pagination">
+                <li>
+                    <a href="steam.html" aria-label="Previous"> <span aria-hidden="true">&laquo;</span> </a>
+                </li>
+                <li><a href="origin.html">1</a></li>
+                <li><a href="steam.html">2</a></li>
+                <li><a href="uplay.html">3</a></li>
+                <li>
+                    <a href="#" aria-label="Next"> <span aria-hidden="true">&raquo;</span> </a>
+                </li>
+            </ul>
+        </nav>
+    </center>
 </body>
 
 </html>
