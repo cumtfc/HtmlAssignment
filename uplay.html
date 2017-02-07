@@ -24,17 +24,17 @@
 </head>
 
 <body data-spy="scroll" data-target="#myScrollspy" class="body">
-    <nav class=" navbar navbar-default navbar-static-top" role="navigation" style="margin:0px;">
+   <nav class=" navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
                 <a class="nav-brand" href="index.html"><img style="width: 40px;height: 40px;" src="img/logo.jpg" /></a>
             </div>
-            <div class="collapse navbar-collapse">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav" role="tablist">
                     <li role="presentation" class="hidden-sm"> <a href="index.html">首页</a> </li>
                     <li role="presentation"> <a href="recommend.html">游戏佳作推荐</a> </li>
-                    <li role="presentation" class="dropdown active"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <li role="presentation" class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">
 							游戏分发平台 <span class="caret"></span>
 						</a>
                         <ul class="dropdown-menu" role="menu">
@@ -43,7 +43,7 @@
                             <li role="presentation"> <a href="uplay.html">UPlay</a> </li>
                         </ul>
                     </li>
-                    <li role="presentation" class="hidden-sm"> <a href="personalinformation.html">添加我为好友</a> </li>
+                    <li role="presentation" class="active"> <a href="personalinformation.html">添加我为好友</a> </li>
                 </ul>
                 <form class="navbar-form navbar-right " role="search" action="http://store.steampowered.com/search/">
                     <div class="input-group">
