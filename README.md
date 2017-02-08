@@ -1,11 +1,6 @@
 # cumtfc.github.io
-<style>
-p{
-    font-family:'微软雅黑';
-}
 
-</style>
-<center>Preview </center>
+<p>Preview:</p> 
 <img src="img/preview .jpg"  />
 <h1>Assignment for web developing courses.</h1>
 <p>View the pages：https://cumtfc.github.io</p>
