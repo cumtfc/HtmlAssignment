@@ -6,9 +6,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/pages.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/pages.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </head>
@@ -17,12 +17,12 @@
     <nav class=" navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <button type="button" class="navbar-toggle collapsed"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
                 <a class="nav-brand" href="index.html"><img style="width: 40px;height: 40px;" src="img/logo.jpg" /></a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav" role="tablist">
-                    <li role="presentation" class="hidden-sm"> <a href="index.html">首页</a> </li>
+                    <li role="presentation" class="hidden-sm active"> <a href="index.html">首页</a> </li>
                     <li role="presentation"> <a href="recommend.html">游戏佳作推荐</a> </li>
                     <li role="presentation" class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">
 							游戏分发平台 <span class="caret"></span>
@@ -33,7 +33,7 @@
                             <li role="presentation"> <a href="uplay.html">UPlay</a> </li>
                         </ul>
                     </li>
-                    <li role="presentation" class="active"> <a href="personalinformation.html">添加我为好友</a> </li>
+                    <li role="presentation" > <a href="personalinformation.html">添加我为好友</a> </li>
                 </ul>
                 <form class="navbar-form navbar-right " role="search" action="http://store.steampowered.com/search/">
                     <div class="input-group">
@@ -90,15 +90,19 @@
         <section class="pagegrey">
             <div class="container">
                 <div class="pagediv row">
+                <center>
+                    <h2>三大主流游戏分发平台</h2>
+                </center>
+                <br />
                     <div class="col-md-4">
                         <center>
-                            <h2>Steam</h2></center> <img class="img-responsive" alt="DOOM图" src="img/game2.jpg"></div>
+                            <h3>Steam</h2></center> <img class="img-responsive center-block" alt="steam logo" src="img/steam.png"></div>
                     <div class="col-md-4">
                         <center>
-                            <h2>Origin</h2></center><img class="img-responsive" alt="DOOM图" src="img/game2.jpg"></div>
+                            <h3>Origin</h2></center><img class="img-responsive" alt="origin logo" src="img/origin.png"></div>
                     <div class="col-md-4">
                         <center>
-                            <h2>Uplay</h2></center><img class="img-responsive" alt="DOOM图" src="img/game2.jpg"></div>
+                            <h3>Uplay</h2></center><img class="img-responsive" alt="uplay logo" src="img/uplay.png"></div>
                 </div>
             </div>
         </section>

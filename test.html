@@ -1,42 +1,80 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh-cn">
 
 <head>
-    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-
-<body>
-    <ul id="myTab" class="nav nav-pills">
-        <li class="dropdown"> <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown">Java <b class="caret"></b>
-		</a>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
-                <li><a href="#jmeter" tabindex="-1" data-toggle="tab">
-				jmeter</a> </li>
-                <li><a href="#ejb" tabindex="-1" data-toggle="tab">
-				ejb</a> </li>
-            </ul>
-        </li>
-    </ul>
-    <div id="myTabContent" class="tab-content">
-        <div class="tab-pane fade in active" id="home">
-            <p>菜鸟教程是一个提供最新的web技术站点，本站免费提供了建站相关的技术文档，帮助广大web技术爱好者快速入门并建立自己的网站。菜鸟先飞早入行——学的不仅是技术，更是梦想。</p>
-        </div>
-        <div class="tab-pane fade" id="ios">
-            <p>iOS 是一个由苹果公司开发和发布的手机操作系统。最初是于 2007 年首次发布 iPhone、iPod Touch 和 Apple TV。iOS 派生自 OS X，它们共享 Darwin 基础。OS X 操作系统是用在苹果电脑上，iOS 是苹果的移动版本。</p>
-        </div>
-        <div class="tab-pane fade" id="jmeter">
-            <p>jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。</p>
-        </div>
-        <div class="tab-pane fade" id="ejb">
-            <p>Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的 J2EE 上。 </p>
-        </div>
-    </div>
+    <title>origin</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/pages.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js">
+    </script>
     <script>
-        $(function () {
-            $('#myTab li:eq(0) a').tab('show');
+        $(document).ready(function () {
+            $("#myNav").affix({
+                offset: {
+                    top: 193
+                }
+            });
         });
     </script>
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy" class="body">
+   <nav class=" navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" > <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <a class="nav-brand" href="index.html"><img style="width: 40px;height: 40px;" src="img/logo.jpg" /></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav" role="tablist">
+                    <li role="presentation" class="hidden-sm"> <a href="index.html">首页</a> </li>
+                    <li role="presentation"> <a href="recommend.html">游戏佳作推荐</a> </li>
+                    <li role="presentation" class="dropdown" class="active"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            游戏分发平台 <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"> <a href="origin.html">Origin</a> </li>
+                            <li role="presentation"> <a href="steam.html">Steam</a> </li>
+                            <li role="presentation"> <a href="uplay.html">UPlay</a> </li>
+                        </ul>
+                    </li>
+                    <li role="presentation"> <a href="personalinformation.html">添加我为好友</a> </li>
+                </ul>
+                <form class="navbar-form navbar-right " role="search" action="http://store.steampowered.com/search/">
+                    <div class="input-group">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="游戏搜索" name="term"> </div> <span class="input-group-btn">
+                              <button type="submit" class="btn btn-default" onclick="var $Form = $J(this).parents('form'); $Form.submit(); return false;"><span class="glyphicon glyphicon-search"></span></button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <header class="header">
+        <div>
+            <h1>Uplay</h1>
+            <p>育碧旗下游戏平台，提供自家游戏的购买和下载。</p>
+        </div>
+    </header>
+    <article class="row">
+        <nav class="col-md-2 hidden-xs hidden-sm" id="myScrollspy" role="navigation">
+            <ul class="nav nav-tabs nav-stacked" id="myNav">
+                <li class="active"><a href="#section-1"><span class="glyphicon glyphicon-home">&nbsp;</span>Uplay</a></li>
+                <li><a href="#section-2"><span class="glyphicon glyphicon-tags">&nbsp;</span>平台特点</a></li>
+                <li><a href="#section-3"><span class="glyphicon glyphicon-shopping-cart">&nbsp;</span>客户端</a></li>
+                <li><a href="#section-4"><span class="glyphicon glyphicon-font">&nbsp;</span>反响及评价</a></li>
+                <li><a href="#section-5"><span class="glyphicon glyphicon-user">&nbsp;</span>个人评价</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-chevron-up">&nbsp;</span>返回顶端</a></li>
+            </ul>
+        </nav>
+
+
 </body>
 
 </html>
