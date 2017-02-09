@@ -20,6 +20,7 @@ h6 {
 .slider {
     margin-top: 50px;
     overflow: hidden;
+    
 }
 
 .floatclear {
@@ -33,7 +34,7 @@ h6 {
     filter: alpha(opacity=50);
     position: absolute;
     left: 100px;
-    top: 200px;
+    top: 150px;
     z-index: 1000;
     color: white;
     font-size: 30px;
@@ -41,10 +42,11 @@ h6 {
 }
 
 .informationsm {
-    margin-top: 70px;
     padding: 10px;
     filter: alpha(opacity=50);
     position: absolute;
+    left:10%;
+     top: 100px;
     z-index: 1000;
     color: white;
     font-size: 24px;
@@ -52,10 +54,11 @@ h6 {
 }
 
 .informationxs {
-    margin-top: 70px;
     padding: 5px;
     filter: alpha(opacity=50);
     position: absolute;
+    left: 15%;
+     top: 100px;
     z-index: 1000;
     color: white;
     font-size: 14px;
@@ -84,22 +87,22 @@ a:active {
 }
 */
 
-.information a:link {
+.information a:link,.informationsm a:link,.informationxs a:link {
     color: white;
     text-decoration: none;
 }
 
-.information a:visited {
+.information a:visited,.informationsm a:visited,.informationxs a:visited {
     color: white;
 }
 
-.information a:hover {
+.information a:hover,.informationsm a:hover,.informationxs a:hover {
     color: grey;
     font-weight: bold;
     text-decoration: none;
 }
 
-.information a:active {
+.information a:active,.informationsm a:active,.informationxs a:active {
     color: white;
 }
 
